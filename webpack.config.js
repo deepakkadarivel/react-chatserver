@@ -1,6 +1,6 @@
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8081',
+    'webpack-dev-server/client?http://localhost:7000',
     'webpack/hot/only-dev-server',
     './src/index.js',
   ],
@@ -20,7 +20,10 @@ module.exports = {
     filename: 'bundle.js',
   },
   devServer: {
+    inline: true,
+    port: 7000,
     contentBase: './dist',
     hot: true,
+    historyApiFallback: true,
   },
 }
