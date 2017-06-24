@@ -5,7 +5,7 @@ import Routes from './routes'
 
 ReactDOM.render(
   Routes,
-  document.getElementById('app'),
+  document.getElementById('app')
 )
 
 module

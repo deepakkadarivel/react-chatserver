@@ -13,7 +13,7 @@ class Home extends Component {
   render() {
     const { isAuthenticated } = this.props.auth
     return (
-      <div className="container">
+      <div className='container'>
         {
           isAuthenticated() && (
             <h4>
@@ -26,9 +26,9 @@ class Home extends Component {
             <h4>
               You are not logged in! Please{' '}
               <a
-                style={{ cursor: 'pointer' }}
-                onClick={this.login}
-                role="link"
+                style={ { cursor: 'pointer' } }
+                onClick={ this.login }
+                role='link'
               >
                 Log In
               </a>

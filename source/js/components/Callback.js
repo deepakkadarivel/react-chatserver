@@ -14,7 +14,7 @@ const Callback = () => {
     backgroundColor: 'white',
   }
   return (
-    <div style={style}>
+    <div style={ style }>
       <p>Callback component</p>
     </div>
   )

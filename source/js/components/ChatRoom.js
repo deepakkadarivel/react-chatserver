@@ -11,6 +11,10 @@ class ChatRoom extends Component {
     this.initSocket = this.initSocket.bind(this)
   }
 
+  componentDidMount() {
+    this.initSocket()
+  }
+
   initSocket() {
     this.ws = new WebSocket('ws://localhost:8080')
     this.ws.onmessage = (msg) => {
@@ -20,10 +24,6 @@ class ChatRoom extends Component {
         messages: tempMessages,
       })
     }
-  }
-
-  componentDidMount() {
-    this.initSocket()
   }
 
   sendMessage(message) {
