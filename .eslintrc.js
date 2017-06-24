@@ -40,7 +40,7 @@ module.exports = {
         "react/sort-comp": 0,
         "react/forbid-prop-types": 0,
         "react/no-unused-prop-types": 0,
-        "jsx-quotes": [2, "prefer-double"],
+        "jsx-quotes": [2, "prefer-single"],
         "no-extra-semi": 2,
         "semi": [2, "never"]
     }
