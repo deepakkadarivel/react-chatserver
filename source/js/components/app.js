@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 
 import Auth from '../Auth/Auth'
 
+// import Header from './Header'
+
 class App extends Component {
 
   constructor() {
@@ -29,6 +31,7 @@ class App extends Component {
     const { isAuthenticated } = this.props.auth
     return (
       <div>
+        {/*<Header />*/}
         {/*<Navbar fluid>
           <Navbar.Header>
             <Navbar.Brand>*/}
