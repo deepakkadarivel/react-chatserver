@@ -9,6 +9,7 @@ import Home from './components/Home'
 import Callback from './components/Callback'
 import Auth from './Auth/Auth'
 import history from './Auth/history'
+import Profile from './components/Profile/profile'
 
 const auth = new Auth()
 
@@ -30,6 +31,7 @@ const Routes = (
           return <Callback { ...props } />
         } }
       />
+      <Route path='/userinfo' render={ (props) => <Profile auth={ auth } { ...props } /> } />
     </div>
   </BrowserRouter>
 )
